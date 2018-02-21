@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Biblioteca</title>
+
+        <link rel="stylesheet" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <h2 class="title">Biblioteca</h2>
+
+        <p>
+            <span name="table-type" data-table="books" >Carti</span>
+            <span name="table-type" data-table="employees">Angajati</span>
+            <span name="table-type" data-table="customers">Client</span>
+            <span name="table-type" data-table="transactions">Tranzactii</span>
+        </p>
+
+        <!-- ===================================== CARTE -->
+
+        <table class="main_table books">
+
+            <tr>
+                <th>Titlu</th>
+                <th>Autor</th>
+                <th>Editura</th>
+                <th>An aparitie</th>
+                <th>Gen</th>
+                <th>Valoare inventar</th>
+                <th>Impumutat</th>
+                <th>Imprumutabil</th>
+            </tr>
+
+            <tr>
+                <td>B</td>
+                <td>A</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+            </tr>
+
+        </table>
+
+        <h2 class="books">Adauga o carte</h2>
+
+        <div class="input_form books">
+            <label>Titlu:<input name="titlu"></input></label>
+            <label>Autor:<input name="autor"></input></label>
+            <label>Editura:<input name="editura"></input></label>
+            <label>An aparitie:<input name="an_aparitie"></input></label>
+            <label>Gen:<input name="gen"></input></label>
+            <label>Valoare inventar:<input name="valoare_inventar"></input></label>
+
+            <p class="form-submit">Adauga in baza de date</p>
+        </div>
+
+        <!-- ===================================== ANGAJAT -->
+
+        <table class="main_table employees" style="display: none">
+
+            <tr>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>Functie</th>
+                <th>Salariu</th>
+            </tr>
+
+        </table>
+
+        <h2 class="employees" style="display: none">Adauga un angajat</h2>
+
+        <div class="input_form employees" style="display: none">
+            <label>Nume:<input name="nume_angajat"></input></label>
+            <label>Prenume:<input name="prenume_angajat"></input></label>
+            <label>Functie:<input name="functie"></input></label>
+            <label>Salariu:<input name="salariu"></input></label>
+
+            <p class="form-submit">Adauga in baza de date</p>
+        </div>
+
+        <!-- ===================================== CLIENT -->
+
+        <table class="main_table customers" style="display: none">
+
+            <tr>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>CNP</th>
+                <th>Adresa</th>
+            </tr>
+
+        </table>
+
+        <h2 class="customers" style="display: none">Adauga un client</h2>
+
+        <div class="input_form customers" style="display: none">
+            <label>Nume:<input name="nume_client"></input></label>
+            <label>Prenume:<input name="prenume_client"></input></label>
+            <label>CNP:<input name="CNP"></input></label>
+            <label>Adresa:<input name="adresa"></input></label>
+
+            <p class="form-submit">Adauga in baza de date</p>
+        </div>
+
+        <!-- ======================================== IMPRUMUT -->
+
+        <table class="main_table transactions" style="display: none">
+
+            <tr>
+                <th>Titlu</th>
+                <th>Nume client</th>
+                <th>Prenume client</th>
+                <th>Data imprumut</th>
+                <th>Data restituire</th>
+                <th>Amenda</th>
+            </tr>
+
+        </table>
+
+        <h2 class="transactions" style="display: none">Adauga o tranzactie</h2>
+
+        <div class="input_form transactions" style="display: none">
+            <label>Titlu:<input name="titlu_imprumut"></input></label>
+            <label>Nume client:<input name="nume_imprumut"></input></label>
+            <label>Prenume client:<input name="prenume_imprumut"></input></label>
+            <label>Data imprumut:<input name="data_imprumut"></input></label>
+            <label>Data restituire:<input name="data_restituire"></input></label>
+
+            <p class="form-submit">Adauga in baza de date</p>
+        </div>
+
+        <!-- =============================================================== -->
+
+    </body>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+</html>

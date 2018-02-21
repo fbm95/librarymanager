@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+
+    background-color: #111;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+table {
+  display: inline-table;
+    width: calc(100% - 100px);
+    max-height: 400px;
+
+    overflow-y: auto;
+
+    margin-bottom: 50px;
+}
+
+td, th, h2 {
+    width: auto;
+
+    color: #e84d00;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+th {
+    background-color: #630b0b;
+}
+
+span[name="table-type"] {
+  margin: 5px;
+
+  cursor: pointer;
+
+  color: #e84d00;
+}
+
+.input_form {
+  display: inline-block;
+  width: auto;
+
+  text-align: right;
+}
+
+.input_form p {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e84d00;
+}
+
+label {
+    color: #e84d00;
+    display: block;
+}
+
+label input {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e84d00;
+
+    margin-left: 10px;
+    padding: 5px;
+
+    color: #e84d00;
+}
